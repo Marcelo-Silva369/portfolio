@@ -188,7 +188,7 @@ h1 {
 }
 
 .item {
-  width: 154px;
+  width: 150px;
   left: -300px;
   position: absolute;
   animation: autoRun 10s linear infinite;
