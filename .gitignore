@@ -1,0 +1,74 @@
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Diretórios de dependências
+node_modules/
+jspm_packages/
+
+# Arquivos de build
+/dist
+/build
+/.pnp
+.pnp.js
+
+# Arquivos de configuração local
+*.local
+
+# Arquivos de log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Arquivos do Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Arquivos do Windows
+[Ll]ogs/
+[Tt]emp/
+
+# Arquivos de desenvolvimento
+*.log
+*.pem
+
+# Arquivos de cache
+.cache/
+*.cache
+
+# Arquivos de configuração local
+*.local.*
+
+# Arquivos de ambiente local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Arquivos de configuração do editor
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
