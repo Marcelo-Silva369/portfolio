@@ -19,7 +19,7 @@ header {
 
 .banner {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)),
-    url("../Img/fun-img.jpg");
+    url("./Img/fun-img.jpg");
   width: 100%;
   height: auto;
   display: flex;
