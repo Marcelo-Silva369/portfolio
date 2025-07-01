@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Share Tech", sans-serif;
+}
+
+header {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.banner {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.750), rgba(0, 0, 0, 0.750)),
+    url("/Img/fun-img.jpg");
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+h1 {
+  background: linear-gradient(to right, #00ff22, #fbff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 70px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.menu {
+  font-size: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+i {
+  color: rgb(210, 234, 255);
+  text-decoration: none;
+  font-weight: 900;
+  transition: all 0.3s ease-in-out;
+  margin-left: -100px;
+  font-size: 45px;
+  &:hover {
+    color: orange;
+    text-shadow: 0px 0px 10px rgba(4, 10, 133, 0.916);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+}
+
+a {
+  font-size: 70px;
+}
+
+/* SEÇÃO CERTIFICADOS */
+
+main {
+  margin-top: 200px;
+}
+
+.container {
+  margin: 19px;
+  padding: 0 50px;
+  float: left;
+  width: 29.99999%;
+}
+
+div.certificado img {
+  border: 1px solid #ccc;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.916);
+  border: 1px solid #213472;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.container h2 {
+  font-size: 25px;
+  padding: 5px 0;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 0 50px 0 50px;
+  background-color: #213472;
+  color: rgb(210, 234, 255);
+}
+
+.info p {
+  padding: 5px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.info hr {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #213472;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 48.99999%;
+    margin: 6px 0;
+    padding: 0 30px;
+  }
+
+  .container h2 {
+    font-size: 22px;
+  }
+
+  .info {
+    margin: 0 0 20px 0;
+  }
+  .info p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  hr {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+
+    i {
+      margin: 0 auto;
+      position: absolute;
+      right: 90%;
+      top: 10px;
+      left: 10px;
+    }
+
+    a {
+      font-size: 40px;
+    }
+  }
+
+  .container {
+    width: 49.99999%;
+    margin: 6px 0;
+    padding: 0 30px;
+  }
+
+  .container h2 {
+    font-size: 18px;
+  }
+
+  .info {
+    margin: 0 0 20px 0;
+  }
+  .info p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  hr {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .container {
+    width: 100%;
+    margin: 6px 0;
+    padding: 0 30px;
+  }
+
+  .container h2 {
+    font-size: 20px;
+  }
+
+  .info {
+    margin: 0 0 20px 0;
+  }
+  .info p {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  hr {
+    width: 50%;
+  }
+}

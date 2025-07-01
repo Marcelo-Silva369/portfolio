@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Share Tech", sans-serif;
+}
+
+.banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.664), rgba(0, 0, 0, 0.441)),
+    url("/Img/banner.jpg");
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+}
+
+.menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  list-style: none;
+  padding: 5px 20px;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+}
+
+.menu li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 150px;
+  text-align: center;
+}
+
+.menu a,
+.menu h2 {
+  display: block;
+  background: linear-gradient(to right, #fbff00, #00ff22);
+  -webkit-background-cllip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 26px;
+  text-align: center;
+  padding: 10px 10px;
+  text-decoration: none;
+  width: 100%;
+  white-space: nowrap;
+}
+
+h1 {
+  font-size: 15rem;
+  background: linear-gradient(to right, #00ff22, #fbff00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+  text-align: center;
+  margin: auto;
+  margin-top: 50px;
+}
+
+/* SEÇÃO CONTAINER 1 HTML, CSS E JS */
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.img-linguagens {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.img-html img {
+  width: 80px;
+}
+.img-css img {
+  width: 75px;
+}
+.img-js img {
+  width: 150px;
+}
+
+/* SEÇÃO NOME PROJETOS */
+
+.projetos {
+  width: 100%;
+  h2 {
+    font-size: 30px;
+    text-align: center;
+    background-color: navy;
+    color: white;
+    padding: 1px 0;
+    font-weight: 500;
+    margin-top: -25px;
+  }
+}
+
+/* CSS para dropdown de contato */
+.dropdown {
+  position: relative;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #222;
+  border-radius: 5px;
+  width: 80%;
+  top: 40px;
+  z-index: 1;
+}
+
+.dropdown h2{
+  font-weight: 500;
+}
+
+.dropdown-content a {
+  color: white;
+  text-align: left;
+  font-size: 18px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropdown-content a {
+  text-align: left;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* SEÇÃO CARROSEL */
+
+.container-carrosel {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden; /* Adicione esta linha */
+
+  gap: 20px;
+}
+
+.carrosel:has(.item:hover) .item {
+  filter: grayscale(1); /* todas ficam cinza */
+  animation-play-state: paused;
+}
+
+.item {
+  transition: all 0.3s ease-in-out;
+  animation-play-state: running;
+  filter: none; /* todas coloridas por padrão */
+}
+
+.carrosel:has(.item:hover) .item:hover {
+  filter: grayscale(0); /* a que está com hover volta à cor */
+  scale: 0.9;
+}
+
+.carrosel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+}
+
+.item {
+  width: 154px;
+  left: -300px;
+  position: absolute;
+  animation: autoRun 9s linear infinite;
+  animation-delay: calc(9 / var(--quantity) * var(--delay));
+  cursor: pointer;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@keyframes autoRun {
+  from {
+    left: -150px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+}
+
+@media screen and (max-width: 1180px) {
+  body {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    h1 {
+      font-size: 60px;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
+  .menu {
+    position: static;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto 30px;
+    padding: 0;
+    width: 100%;
+    max-width: 800px;
+  }
+  
+  .menu li {
+    margin: 5px;
+    min-width: 120px;
+  }
+
+  .menu {
+    position: static;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 30px;
+    padding: 15px 0;
+    width: 80%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+  }
+
+  .menu li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    min-width: 120px;
+  }
+  
+  .menu a,
+  .menu h2 {
+    font-size: 20px;
+    padding: 5px 15px;
+    margin: 0;
+    text-align: center;
+  }
+
+  
+
+  .dropdown-content {
+    width: 80%;
+    top: 50px;
+
+    a {
+      font-size: 15px; /* Ajusta o tamanho da fonte para telas menores */
+      padding: 10px;
+      margin: 0;
+      
+    }
+  }
+
+  .dropdown-content.largura-dropdown {
+    margin-left: -10px;
+
+    a {
+      font-size:10px; /* Ajusta o tamanho da fonte para telas menores */
+      
+    }
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      width: 70px;
+    }
+  }
+
+  .img-linguagens {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .img-js img {
+    width: 135px;
+  }
+
+  .img-css img {
+    width: 64px;
+  }
+
+  .projetos {
+    width: 100vw;
+
+    h2 {
+      font-size: 20px;
+      text-align: center;
+    }
+  }
+
+  .item p {
+    font-size: 12px;
+  }
+
+  .item a {
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+  }
+}
