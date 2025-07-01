@@ -159,7 +159,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow-x: hidden; /* Adicione esta linha */
+  overflow: hidden;
 
   gap: 20px;
 }
@@ -191,8 +191,8 @@ h1 {
   width: 154px;
   left: -300px;
   position: absolute;
-  animation: autoRun 9s linear infinite;
-  animation-delay: calc(9 / var(--quantity) * var(--delay));
+  animation: autoRun 10s linear infinite;
+  animation-delay: calc(10 / var(--quantity) * var(--delay));
   cursor: pointer;
 
   img {
