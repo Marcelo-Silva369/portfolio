@@ -17,7 +17,7 @@ Seu site estará disponível em: `https://seu-usuario.github.io/nome-do-reposito
 
 ## Estrutura do Projeto
 
-- `/TelaInicial` - Página inicial do portfólio
+- `/index.html` - Página inicial do portfólio
 - `/TelaPerfil` - Página de perfil
 - `/TelaCertificados` - Página de certificados
 - `/Img` - Imagens utilizadas no site
