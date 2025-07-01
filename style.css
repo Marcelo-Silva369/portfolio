@@ -185,10 +185,11 @@ h1 {
   height: 100%;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .item {
-  width: 150px;
+  width: 154px;
   left: -300px;
   position: absolute;
   animation: autoRun 10s linear infinite;
@@ -200,7 +201,7 @@ h1 {
   }
 
   p {
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
   }
 }
